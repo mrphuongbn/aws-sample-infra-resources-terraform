@@ -19,13 +19,13 @@ A sample infra resources code in Terraform that goes into a target workload acco
 Once all resources are deployed (see section on how to deploy resources) then go to EC2 -> Load Balancer (demo*) -> DNS Name -> Copy it and open it in the browser (make sure to use http:// and not https://).
 
 ## Prerequisites:
-* Set up the central tooling account as per its README in the sister repo [aws-multi-region-cicd-with-terraform](https://github.com/aws-samples/aws-multi-region-cicd-with-terraform) that will create the AWS CodeCommit repo.
+* Set up the central tooling account as per its README in the sister repo [aws-multi-region-cicd-with-terraform](https://github.com/aws-samples/aws-multi-region-cicd-with-terraform#instructions-to-deploy-the-cicd-pipeline) that will create the AWS CodeCommit repo.
 
 ## To push the infra repo code into AWS CodeCommit in the central tooling account:
-* See instructions in the sister repo [aws-multi-region-cicd-with-terraform](https://github.com/aws-samples/aws-multi-region-cicd-with-terraform)
+* See instructions in the sister repo [aws-multi-region-cicd-with-terraform](https://github.com/aws-samples/aws-multi-region-cicd-with-terraform#step-3-push-the-infra-repo-code-into-aws-codecommit-in-the-central-tooling-account)
 
 ## To deploy resources into the target workload accounts:
-* See instructions on how to kick off an infra pipeline (in the central tooling account) at the sister repo [aws-multi-region-cicd-with-terraform](https://github.com/aws-samples/aws-multi-region-cicd-with-terraform)
+* See instructions on how to kick off an infra pipeline (in the central tooling account) at the sister repo [aws-multi-region-cicd-with-terraform](https://github.com/aws-samples/aws-multi-region-cicd-with-terraform#kick-off-a-pipeline-to-deploy-to-a-target-workload-account-and-a-target-region)
 
 ## To destroy the resources in the target workload accounts:
 * If not done already, use `aws configure` with your IAM user credentials for the central tooling account and then assume InfraBuildRole:
